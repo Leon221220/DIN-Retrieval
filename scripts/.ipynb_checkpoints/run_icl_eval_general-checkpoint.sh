@@ -1,0 +1,21 @@
+python -u ../din_icl_retrieval_general.py \
+  --model_name /userhome/huggingface/llama3.1-8B-Instruct \
+  --pool_file ../../localdataset/prontoqa-train/prontoqa_train_split_v2.jsonl \
+  --query_file ../../localdataset/gsm8k/test.jsonl \
+  --src_file ../../localdataset/prontoqa-train/prontoqa_train_split_v2.jsonl \
+  --tgt_file ../../localdataset/gsm8k/train.jsonl \
+  --tau 0.3 \
+  --k_ratio 0.1 \
+  --balance tgt \
+  --zs_mode pooled \
+  --verbose \
+  --dtype "float16" \
+  --tensor_parallel_size 4 \
+  --max_new_tokens 4096 \
+  --with_random_control \
+  --with_zero_shot \
+  --icl_shots 0 \
+  --topk 3 \
+  --temperature 0.7 \
+  --task_name gsm8k \
+  --compute_din

@@ -1,0 +1,25 @@
+python -u ../src/grid_run_fallbacks.py \
+  --runner ../din_icl_retrieval_general.py \
+  --model_name /userhome/huggingface/Qwen2.5-14B-Instruct \
+  --pool_file ../../localdataset/gsm8k/train.jsonl \
+  --query_file ../../localdataset/folio/folio_v2_validation.jsonl \
+  --src_file ../../localdataset/gsm8k/train.jsonl \
+  --tgt_file ../../localdataset/folio/folio_v2_train.jsonl \
+  --tau 0.3 \
+  --k_ratio 0.1 \
+  --balance tgt \
+  --zs_mode pooled \
+  --dtype float16 \
+  --tensor_parallel_size 4 \
+  --max_new_tokens 4096 \
+  --with_random_control \
+  --with_zero_shot \
+  --icl_shots 0 \
+  --topk 1 \
+  --layers="-6,-5,-4,-3,-2,-1" \
+  --out_dir ../grid_fallback_runs/qwen2.5_14b/gsm8k_folio/top_1 \
+  --summary_csv ../grid_fallback_runs/qwen2.5_14b/gsm8k_folio/top_1/summary.csv \
+  --verbose \
+  --temperature 0.0 \
+  --task_name folio
+  

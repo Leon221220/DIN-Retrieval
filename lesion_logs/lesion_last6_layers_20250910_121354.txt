@@ -1,0 +1,78 @@
+# Lesion experiment | model=/userhome/huggingface/llama3.1-8B-Instruct | tag=last6_layers | time=20250910_121354
+Base PPL: SRC=11.6282 | TGT=12.8389
+Params: tau=1.0, k_ratio=0.05, fill=zero, trials=300, max_len_hidden=1024, max_len_ppl=512, bs_hidden=8, bs_ppl=8
+
+[Layer idx -12 | hs_idx -12] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.57 | ΔI=0.9465 | rand Δ mean±std 0.0344±0.2930 | Z=3.11 | p_norm=9.256e-04 | p_emp=0.0066
+       rand Δ q90=0.4459 q95=0.5852 q99=0.7967 (norm q95=0.5163 q99=0.7160)
+  TGT: base 12.84 | lesion(I) 14.92 | ΔI=2.0773 | rand Δ mean±std 0.1882±0.3592 | Z=5.26 | p_norm=7.256e-08 | p_emp=0.0066
+       rand Δ q90=0.7080 q95=0.8965 q99=1.2798 (norm q95=0.7791 q99=1.0239)
+
+[Layer idx -11 | hs_idx -11] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.57 | ΔI=0.9406 | rand Δ mean±std 0.0325±0.2918 | Z=3.11 | p_norm=9.279e-04 | p_emp=0.0166
+       rand Δ q90=0.4176 q95=0.6177 q99=0.9525 (norm q95=0.5124 q99=0.7113)
+  TGT: base 12.84 | lesion(I) 15.20 | ΔI=2.3641 | rand Δ mean±std 0.1737±0.3290 | Z=6.66 | p_norm=1.395e-11 | p_emp=0.0033
+       rand Δ q90=0.6750 q95=0.8304 q99=1.1380 (norm q95=0.7149 q99=0.9392)
+
+[Layer idx -10 | hs_idx -10] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.33 | ΔI=0.7006 | rand Δ mean±std 0.0730±0.3325 | Z=1.89 | p_norm=2.956e-02 | p_emp=0.0731
+       rand Δ q90=0.5954 q95=0.7431 q99=1.0206 (norm q95=0.6200 q99=0.8466)
+  TGT: base 12.84 | lesion(I) 15.56 | ΔI=2.7240 | rand Δ mean±std 0.2286±0.3957 | Z=6.31 | p_norm=1.423e-10 | p_emp=0.0033
+       rand Δ q90=0.8458 q95=1.0004 q99=1.5206 (norm q95=0.8794 q99=1.1490)
+
+[Layer idx -9 | hs_idx -9] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.45 | ΔI=0.8198 | rand Δ mean±std 0.0561±0.2938 | Z=2.60 | p_norm=4.663e-03 | p_emp=0.0233
+       rand Δ q90=0.4677 q95=0.6310 q99=0.8934 (norm q95=0.5393 q99=0.7395)
+  TGT: base 12.84 | lesion(I) 15.05 | ΔI=2.2116 | rand Δ mean±std 0.2181±0.3936 | Z=5.06 | p_norm=2.047e-07 | p_emp=0.0033
+       rand Δ q90=0.7990 q95=0.9773 q99=1.3472 (norm q95=0.8656 q99=1.1338)
+
+[Layer idx -8 | hs_idx -8] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.59 | ΔI=0.9621 | rand Δ mean±std 0.1187±0.3815 | Z=2.21 | p_norm=1.353e-02 | p_emp=0.0432
+       rand Δ q90=0.6410 q95=0.8344 q99=1.3126 (norm q95=0.7462 q99=1.0062)
+  TGT: base 12.84 | lesion(I) 15.05 | ΔI=2.2147 | rand Δ mean±std 0.2430±0.4453 | Z=4.43 | p_norm=4.771e-06 | p_emp=0.0066
+       rand Δ q90=0.8584 q95=1.1971 q99=1.4684 (norm q95=0.9755 q99=1.2790)
+
+[Layer idx -7 | hs_idx -7] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.38 | ΔI=0.7503 | rand Δ mean±std 0.0885±0.3698 | Z=1.79 | p_norm=3.675e-02 | p_emp=0.0631
+       rand Δ q90=0.5394 q95=0.8101 q99=1.4228 (norm q95=0.6967 q99=0.9488)
+  TGT: base 12.84 | lesion(I) 14.86 | ΔI=2.0250 | rand Δ mean±std 0.2395±0.4614 | Z=3.87 | p_norm=5.444e-05 | p_emp=0.0066
+       rand Δ q90=0.8526 q95=1.1226 q99=1.5470 (norm q95=0.9984 q99=1.3128)
+
+[Layer idx -6 | hs_idx -6] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.33 | ΔI=0.7036 | rand Δ mean±std 0.0174±0.2962 | Z=2.32 | p_norm=1.027e-02 | p_emp=0.0465
+       rand Δ q90=0.4335 q95=0.6523 q99=1.0963 (norm q95=0.5047 q99=0.7066)
+  TGT: base 12.84 | lesion(I) 14.47 | ΔI=1.6279 | rand Δ mean±std 0.1362±0.4087 | Z=3.65 | p_norm=1.314e-04 | p_emp=0.0166
+       rand Δ q90=0.6633 q95=0.8941 q99=1.6768 (norm q95=0.8085 q99=1.0871)
+
+[Layer idx -5 | hs_idx -5] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.36 | ΔI=0.7342 | rand Δ mean±std 0.0989±0.3248 | Z=1.96 | p_norm=2.524e-02 | p_emp=0.0698
+       rand Δ q90=0.5668 q95=0.8106 q99=1.0875 (norm q95=0.6332 q99=0.8546)
+  TGT: base 12.84 | lesion(I) 14.42 | ΔI=1.5837 | rand Δ mean±std 0.2512±0.4745 | Z=2.81 | p_norm=2.491e-03 | p_emp=0.0399
+       rand Δ q90=0.7344 q95=1.4867 q99=1.9981 (norm q95=1.0317 q99=1.3551)
+
+[Layer idx -4 | hs_idx -4] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.55 | ΔI=0.9175 | rand Δ mean±std 0.1517±0.3032 | Z=2.53 | p_norm=5.774e-03 | p_emp=0.0365
+       rand Δ q90=0.5084 q95=0.8010 q99=1.3895 (norm q95=0.6504 q99=0.8571)
+  TGT: base 12.84 | lesion(I) 14.39 | ΔI=1.5519 | rand Δ mean±std 0.1899±0.3767 | Z=3.62 | p_norm=1.496e-04 | p_emp=0.0266
+       rand Δ q90=0.5256 q95=0.7855 q99=1.8770 (norm q95=0.8095 q99=1.0662)
+
+[Layer idx -3 | hs_idx -3] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.53 | ΔI=0.9037 | rand Δ mean±std 0.1117±0.2178 | Z=3.64 | p_norm=1.383e-04 | p_emp=0.0100
+       rand Δ q90=0.4208 q95=0.6107 q99=0.8509 (norm q95=0.4699 q99=0.6184)
+  TGT: base 12.84 | lesion(I) 13.64 | ΔI=0.7991 | rand Δ mean±std 0.1768±0.4143 | Z=1.50 | p_norm=6.652e-02 | p_emp=0.0399
+       rand Δ q90=0.4090 q95=0.5315 q99=2.3663 (norm q95=0.8582 q99=1.1405)
+
+[Layer idx -2 | hs_idx -2] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 12.49 | ΔI=0.8623 | rand Δ mean±std 0.1806±0.2791 | Z=2.44 | p_norm=7.296e-03 | p_emp=0.0498
+       rand Δ q90=0.5496 q95=0.8388 q99=1.2832 (norm q95=0.6397 q99=0.8299)
+  TGT: base 12.84 | lesion(I) 13.75 | ΔI=0.9125 | rand Δ mean±std 0.2532±0.6000 | Z=1.10 | p_norm=1.359e-01 | p_emp=0.0764
+       rand Δ q90=0.6003 q95=2.1009 q99=2.4763 (norm q95=1.2401 q99=1.6490)
+
+[Layer idx -1 | hs_idx -1] d=4096 K=204
+  SRC: base 11.63 | lesion(I) 14.22 | ΔI=2.5924 | rand Δ mean±std 0.5667±0.4921 | Z=4.12 | p_norm=1.924e-05 | p_emp=0.0100
+       rand Δ q90=1.1466 q95=1.6609 q99=2.5118 (norm q95=1.3761 q99=1.7115)
+  TGT: base 12.84 | lesion(I) 18.29 | ΔI=5.4535 | rand Δ mean±std 0.9887±1.6618 | Z=2.69 | p_norm=3.609e-03 | p_emp=0.0133
+       rand Δ q90=2.4248 q95=3.2474 q99=5.0410 (norm q95=3.7222 q99=4.8547)
+
+Done. JSONL saved to: ./lesion_logs/lesion_last6_layers_20250910_121354.jsonl
+TXT   saved to: ./lesion_logs/lesion_last6_layers_20250910_121354.txt

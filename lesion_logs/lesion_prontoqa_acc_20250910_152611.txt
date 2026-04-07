@@ -1,0 +1,42 @@
+# Lesion experiment (ACC) | model=/userhome/huggingface/llama3.1-8B-Instruct | tag=prontoqa_acc | time=20250910_152611
+Base ACC: SRC=0.3000 | TGT=0.5800
+Params: tau=1.0, k_ratio=0.05, fill=zero, trials=50, max_len_hidden=1024, max_len_acc=1024, bs_hidden=8, bs_acc=8, gen_max_new_tokens=1024, T=0.0, top_p=1.0
+
+[Layer idx -6 | hs_idx -6] d=4096 K=204
+  SRC: base 0.3000 | lesion(I) 0.2600 | ΔI=-0.0400 | rand Δ mean±std -0.0230±0.0408 | Z=-0.42 | p_norm(L)=3.385e-01 | p_emp(L)=0.4510
+       rand Δ q10=-0.0700 q5=-0.0700 q1=-0.0851
+  TGT: base 0.5800 | lesion(I) 0.5500 | ΔI=-0.0300 | rand Δ mean±std +0.0070±0.0363 | Z=-1.02 | p_norm(L)=1.540e-01 | p_emp(L)=0.2353
+       rand Δ q10=-0.0400 q5=-0.0400 q1=-0.0500
+
+[Layer idx -5 | hs_idx -5] d=4096 K=204
+  SRC: base 0.3000 | lesion(I) 0.2800 | ΔI=-0.0200 | rand Δ mean±std -0.0314±0.0409 | Z=0.28 | p_norm(L)=6.098e-01 | p_emp(L)=0.6471
+       rand Δ q10=-0.0710 q5=-0.1000 q1=-0.1253
+  TGT: base 0.5800 | lesion(I) 0.6100 | ΔI=+0.0300 | rand Δ mean±std +0.0038±0.0283 | Z=0.93 | p_norm(L)=8.229e-01 | p_emp(L)=0.8431
+       rand Δ q10=-0.0300 q5=-0.0355 q1=-0.0451
+
+[Layer idx -4 | hs_idx -4] d=4096 K=204
+  SRC: base 0.3000 | lesion(I) 0.2300 | ΔI=-0.0700 | rand Δ mean±std -0.0222±0.0357 | Z=-1.34 | p_norm(L)=9.052e-02 | p_emp(L)=0.0980
+       rand Δ q10=-0.0600 q5=-0.0755 q1=-0.1102
+  TGT: base 0.5800 | lesion(I) 0.6300 | ΔI=+0.0500 | rand Δ mean±std -0.0006±0.0344 | Z=1.47 | p_norm(L)=9.292e-01 | p_emp(L)=0.9412
+       rand Δ q10=-0.0500 q5=-0.0555 q1=-0.0651
+
+[Layer idx -3 | hs_idx -3] d=4096 K=204
+  SRC: base 0.3000 | lesion(I) 0.2500 | ΔI=-0.0500 | rand Δ mean±std -0.0226±0.0509 | Z=-0.54 | p_norm(L)=2.953e-01 | p_emp(L)=0.3529
+       rand Δ q10=-0.0900 q5=-0.1000 q1=-0.1100
+  TGT: base 0.5800 | lesion(I) 0.5300 | ΔI=-0.0500 | rand Δ mean±std +0.0038±0.0231 | Z=-2.32 | p_norm(L)=1.004e-02 | p_emp(L)=0.0392
+       rand Δ q10=-0.0300 q5=-0.0300 q1=-0.0451
+
+[Layer idx -2 | hs_idx -2] d=4096 K=204
+  SRC: base 0.3000 | lesion(I) 0.2700 | ΔI=-0.0300 | rand Δ mean±std -0.0148±0.0412 | Z=-0.37 | p_norm(L)=3.562e-01 | p_emp(L)=0.4510
+       rand Δ q10=-0.0600 q5=-0.0700 q1=-0.0851
+  TGT: base 0.5800 | lesion(I) 0.5700 | ΔI=-0.0100 | rand Δ mean±std +0.0132±0.0352 | Z=-0.66 | p_norm(L)=2.552e-01 | p_emp(L)=0.4118
+       rand Δ q10=-0.0200 q5=-0.0300 q1=-0.0400
+
+[Layer idx -1 | hs_idx -1] d=4096 K=204
+  SRC: base 0.3000 | lesion(I) 0.2300 | ΔI=-0.0700 | rand Δ mean±std -0.0506±0.0575 | Z=-0.34 | p_norm(L)=3.680e-01 | p_emp(L)=0.4118
+       rand Δ q10=-0.1210 q5=-0.1300 q1=-0.1602
+  TGT: base 0.5800 | lesion(I) 0.6300 | ΔI=+0.0500 | rand Δ mean±std -0.0064±0.0574 | Z=0.98 | p_norm(L)=8.369e-01 | p_emp(L)=0.8824
+       rand Δ q10=-0.0600 q5=-0.0800 q1=-0.1910
+
+Done. JSONL saved to: ./lesion_logs/lesion_prontoqa_acc_20250910_152611.jsonl
+TXT   saved to: ./lesion_logs/lesion_prontoqa_acc_20250910_152611.txt

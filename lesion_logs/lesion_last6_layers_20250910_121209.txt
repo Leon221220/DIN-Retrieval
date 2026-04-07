@@ -1,0 +1,4 @@
+# Lesion experiment | model=/userhome/huggingface/llama3.1-8B-Instruct | tag=last6_layers | time=20250910_121209
+Base PPL: SRC=11.6282 | TGT=12.8389
+Params: tau=1.0, k_ratio=0.05, fill=zero, trials=300, max_len_hidden=1024, max_len_ppl=512, bs_hidden=8, bs_ppl=8
+
